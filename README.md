@@ -1,2 +1,2 @@
 # Releases
-See [install](https://fusioncache.github.io/docs/install/) docs.
+See [install](https://fusioncache.github.io/docs/install/install) docs.
