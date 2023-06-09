@@ -1,2 +1,2 @@
-# releases
-Release binaries for FusionCache
+# Releases
+See [install](https://fusioncache.github.io/docs/install/) docs.
