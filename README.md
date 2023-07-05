@@ -1,5 +1,9 @@
 # Releases
+
 See [install](https://fusioncache.github.io/docs/install/install) docs.
+
+## v0.1.1
+Version 0.1 had a fatal bug so it has been removed.
 
 <br/>
 
