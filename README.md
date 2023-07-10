@@ -18,7 +18,7 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 10th July 2023
 - New query: `OIDS` which returns all OIDS for a class
 - Network I/O: reduce threads assigned to network I/O
-- Query Engine: only queue threads if necessary
+- Query Engine: only queue queries if necessary
 
 <br/>
 
