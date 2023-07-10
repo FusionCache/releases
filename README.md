@@ -15,6 +15,7 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 <br/>
 
 ## v0.1.2
+10th July 2023
 - New query: `OIDS` which returns all OIDS for a class
 - Network I/O: reduce threads assigned to network I/O
 - Query Engine: only queue threads if necessary
@@ -22,6 +23,7 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 <br/>
 
 ## v0.1.1
+5th July 2023
 - The first alpha version, supporting the fundamental queries (`STORE`, `GET`, `FIND`, `DELETE`, etc)
 - x86 64bit only
   - ARM version to follow
