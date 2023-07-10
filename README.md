@@ -1,9 +1,8 @@
 <br/>
 
-{: .important}
+> **Warning**
 > 
 > Fusion is pre-release/alpha. There may be bugs and breaking changes ahead.
-> 
 
 <br/>
 
