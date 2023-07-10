@@ -2,7 +2,7 @@
 
 > **Warning**
 > 
-> Fusion is pre-release/alpha. There may be bugs and breaking changes ahead.
+> Fusion is pre-release/alpha. There may be bugs and changes to query structure.
 
 <br/>
 
