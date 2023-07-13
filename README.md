@@ -1,4 +1,5 @@
 <br/>
+<br/>
 
 > **Warning**
 > 
@@ -14,13 +15,23 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 
 <br/>
 
+## v0.1.3
+13th July 2023
+- Improvements to the query engine to reduce memory usage
+- Small improvement to query executors
+
+
+<br/>
+
 ## v0.1.2
 10th July 2023
 - New query: `OIDS` which returns all OIDS for a class
 - Network I/O: reduce threads assigned to network I/O
 - Query Engine: only queue queries if necessary
 
+
 <br/>
+
 
 ## v0.1.1
 5th July 2023
@@ -35,6 +46,7 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 
 
 <br/>
+
 
 # Partnership
 In July 2023 FusionCache was accepted onto the Microsoft For Startups programming. This gives access to Azure services and will open opportunities as the software develops.
