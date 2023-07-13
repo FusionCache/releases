@@ -49,6 +49,6 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 
 
 # Partnership
-In July 2023 FusionCache was accepted onto the Microsoft For Startups programming. This gives access to Azure services and will open opportunities as the software develops.
+In July 2023 FusionCache was accepted onto Microsoft For Startups. This gives access to Azure services and will open opportunities as the software develops.
 
 ![Microsoft Startup](https://www.fusioncache.io/wp-content/uploads/go-x/u/900e42d9-1db8-4c24-9b96-e35207a55ab3/l2,t0,w781,h336/image-560x241.png)
