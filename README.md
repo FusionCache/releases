@@ -15,6 +15,16 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 
 <br/>
 
+## v0.1.4
+24th July 2023
+- Configure with JSON config file rather than command line parameters
+- Removed all command line parameters except for `--config`
+- Default config file provided
+- Minimum Bulk read size changed to 8MB
+- Maximum WS Normal read size changed to 8MB
+
+<br/>
+
 ## v0.1.3
 13th July 2023
 - Improvements to the query engine to reduce memory usage
