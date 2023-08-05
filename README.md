@@ -15,6 +15,13 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 
 <br/>
 
+## v0.1.5
+5th August 2023
+- New "KV Mode", manage data as key-values similar to Redis/memcached
+- Changed config file structure (defaults to KV mode)
+
+<br/>
+
 ## v0.1.4
 24th July 2023
 - Configure with JSON config file rather than command line parameters
