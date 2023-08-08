@@ -3,7 +3,7 @@
 
 > **Warning**
 > 
-> Fusion is pre-release/alpha. There may be bugs and changes to query structure.
+> Fusion is pre-release/alpha.
 
 <br/>
 
@@ -15,17 +15,25 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 
 <br/>
 
+## v0.1.7
+8th August 2023
+- KV Mode: 
+  - New query `SETQ` (Set Quiet) which is the same as `SET` but only sends a response on an error
+  - New query `ADDQ` (Add Quiet) which is the same as `ADD` but only sends a response on an error
+
+<br/>
+
 ## v0.1.6
 7th August 2023
 - KV Mode: 
   - Values can be arrays or objects
-  - New `RNM_KV` which renames a key
+  - New query `RNM_KV` which renames a key
 
 <br/>
 
 ## v0.1.5
 5th August 2023
-- New "KV Mode", manage data as key-values similar to Redis/memcached
+- New "KV Mode", manage data as key-values similar to Redis and memcached
 - Changed config file structure (defaults to KV mode)
 
 <br/>
@@ -38,12 +46,6 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 - Minimum Bulk read size changed to 8MB
 - Maximum WS Normal read size changed to 8MB
 
-<br/>
-
-## v0.1.3
-13th July 2023
-- Improvements to the query engine to reduce memory usage
-- Small improvement to query executors
 
 <br/>
 <br/>
@@ -55,6 +57,7 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 |:---|:---|
 | 0.1.1 |5th July 2023|
 | 0.1.2 |10th July 2023|
+| 0.1.3 |13th July 2023|
 
 
 <br/>
