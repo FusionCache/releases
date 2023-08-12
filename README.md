@@ -27,7 +27,7 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 7th August 2023
 - KV Mode: 
   - Values can be arrays or objects
-  - New query `RNM_KV` which renames a key
+  - New query `RNM_KEY` which renames a key
 
 <br/>
 
