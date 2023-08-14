@@ -15,6 +15,14 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 
 <br/>
 
+## v0.1.8
+14th August 2023
+- KV Mode: 
+  - Small update for performance tweak, not using all cores
+
+
+<br/>
+
 ## v0.1.7
 8th August 2023
 - KV Mode: 
@@ -55,17 +63,17 @@ See [install](https://fusioncache.github.io/docs/install/install) docs.
 
 |Version|Date|
 |:---|:---|
-| 0.1.1 |5th July 2023|
-| 0.1.2 |10th July 2023|
 | 0.1.3 |13th July 2023|
+| 0.1.2 |10th July 2023|
+| 0.1.1 |5th July 2023|
 
 
 <br/>
 <br/>
 
 
-# Partnership
-In July 2023 FusionCache was accepted onto Microsoft For Startups.
-
+---
+<br/>
+<br/>
 
 ![Microsoft Startup](https://www.fusioncache.io/wp-content/uploads/go-x/u/900e42d9-1db8-4c24-9b96-e35207a55ab3/l2,t0,w781,h336/image-560x241.png)
