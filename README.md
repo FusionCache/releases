@@ -7,7 +7,27 @@
 
 <br/>
 
-See [install](https://fusioncache.github.io/docs/install/install) docs.
+FusionCache is a cache for storing, searching and retrieving JSON data. There are two modes:
+
+
+**KeyValue**
+
+- Data is handled as key values, similar to Redis or Memcached
+- Queries and responses are use a WebSocket interface
+
+<br/>
+
+**Objects**
+
+- Data is handled as JSON objects and relationships between objects are tracked
+- Queries and responses are handled by REST and WebSocket interfaces, with a dedicated WebSocket interface for bulk data
+
+<br/>
+
+# Install
+Fusion is available as a Debian package. There isn't a binary for Windows, but there will be a Docker image soon.
+
+See [install](https://fusioncache.github.io/docs/install/install) docs for more information.
 
 <br/>
 
