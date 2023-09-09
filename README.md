@@ -7,21 +7,33 @@
 
 <br/>
 
-FusionCache is a cache for storing, searching and retrieving JSON data. There are two modes:
+FusionCache provides a cache for storing and searching data, and a publish subscribe server for distributing data. Data is always handles as JSON.
 
-
-**KeyValue**
-
-- Data is handled as key values, similar to Redis or Memcached
-- Queries and responses are use a WebSocket interface
+There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set in the configuration file, rather than supporting different modes during runtime. This is gives more control over CPU and memory resources.
 
 <br/>
 
-**Objects**
+## KeyValue
+
+- Data is handled as key values, similar to Redis or Memcached
+- Queries and responses are via WebSocket interface
+
+<br/>
+
+## Publish Subscribe
+
+- Fusion acts as a publish subscribe server
+- Channels are created, to which publishers send messages, whilst subscribers receive messages
+- Messages are exchanged via a WebSockets interface
+
+<br/>
+
+## Objects
 
 - Data is handled as JSON objects and relationships between objects are tracked
 - Queries and responses are handled by REST and WebSocket interfaces, with a dedicated WebSocket interface for bulk data
 
+<br/>
 <br/>
 
 # Install
@@ -32,6 +44,16 @@ See [install](https://fusioncache.github.io/docs/install/install) docs for more 
 <br/>
 
 # Recent Updates
+
+<br/>
+
+## v0.1.9
+09 September 2023
+- Publish Subscribe 
+  - Added lightweight pubsub to Fusion
+  - Config file can have `pubsub` mode and section for this
+  - See [docs](https://github.com/FusionCache/docs/psapi/)
+
 
 <br/>
 
@@ -64,16 +86,6 @@ See [install](https://fusioncache.github.io/docs/install/install) docs for more 
 - New "KV Mode", manage data as key-values similar to Redis and memcached
 - Changed config file structure (defaults to KV mode)
 
-<br/>
-
-## v0.1.4
-24th July 2023
-- Configure with JSON config file rather than command line parameters
-- Removed all command line parameters except for `--config`
-- Default config file provided
-- Minimum Bulk read size changed to 8MB
-- Maximum WS Normal read size changed to 8MB
-
 
 <br/>
 <br/>
@@ -83,6 +95,7 @@ See [install](https://fusioncache.github.io/docs/install/install) docs for more 
 
 |Version|Date|
 |:---|:---|
+| 0.1.4 |24th July 2023|
 | 0.1.3 |13th July 2023|
 | 0.1.2 |10th July 2023|
 | 0.1.1 |5th July 2023|
