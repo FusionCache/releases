@@ -50,9 +50,9 @@ See [install](https://fusioncache.github.io/docs/install/install) docs for more 
 ## v0.1.9
 09 September 2023
 - Publish Subscribe 
-  - Added lightweight pubsub to Fusion
-  - Config file can have `pubsub` mode and section for this
-  - See [docs](https://github.com/FusionCache/docs/psapi/)
+  - Added lightweight pubsub server
+  - Config file can have `pubsub` mode and section to support this
+  - See [docs](https://fusioncache.github.io/docs/psapi/)
 
 
 <br/>
