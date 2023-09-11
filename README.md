@@ -36,11 +36,99 @@ There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set i
 <br/>
 <br/>
 
-# Install
+# Install & Run
 Fusion is available as a Debian package. There isn't a binary for Windows, but there will be a Docker image soon.
+
+- Right-click and "Save link as ..." (or equivalent)
+- Install package: `sudo dpkg -i fusioncache_0.1.9_amd64.deb`
+- This installs to: `/usr/local/bin/fusioncache`
+
+By default, it starts in KV mode with settings:
+- IP: 127.0.0.1
+- Port: 1987
+- Max read buffer: 64 bytes
+
 
 See [install](https://fusioncache.github.io/docs/install/install) docs for more information.
 
+<br/>
+<br/>
+
+# Configure
+
+These can be changed in the `default.json` config file.
+
+`mode` can be either:  `kv`, `pubsub` or `objects`.
+
+Each of mode require specific settings. Defaults are:
+
+**kv**
+
+```json
+{
+  "mode":"kv",
+  "kv":
+  {
+    "ws":
+    {
+      "ip":"127.0.0.1",
+      "port":1987,
+      "maxRead":64
+    }
+  }
+}
+```
+
+**objects**
+
+```json
+{
+  "mode":"objects",
+  "objects":
+  {
+    "restQuery":
+    {
+      "enabled":true,
+      "ip":"127.0.0.1",
+      "port":1981,
+      "maxRead":1024
+    },
+    "wsQuery":
+    {
+      "enabled":true,
+      "ip":"127.0.0.1",
+      "port":1982,
+      "maxRead":1024
+    },
+    "bulkStore":
+    {
+      "enabled":false,
+      "ip":"127.0.0.1",
+      "port":1983,
+      "maxRead":8388608
+    }
+  }
+}
+```
+
+**pubsub**
+```json
+{
+  "mode":"pubsub",
+  "pubsub":
+  {
+    "data":
+    {
+      "ip":"127.0.0.1",
+      "port":1990,
+      "maxRead":256
+    }
+  }
+}
+```
+
+
+<br/>
 <br/>
 
 # Recent Updates
@@ -72,22 +160,6 @@ See [install](https://fusioncache.github.io/docs/install/install) docs for more 
   - New query `ADDQ` (Add Quiet) which is the same as `ADD` but only sends a response on an error
 
 <br/>
-
-## v0.1.6
-7th August 2023
-- KV Mode: 
-  - Values can be arrays or objects
-  - New query `RNM_KEY` which renames a key
-
-<br/>
-
-## v0.1.5
-5th August 2023
-- New "KV Mode", manage data as key-values similar to Redis and memcached
-- Changed config file structure (defaults to KV mode)
-
-
-<br/>
 <br/>
 
 # Older Updates
@@ -95,6 +167,8 @@ See [install](https://fusioncache.github.io/docs/install/install) docs for more 
 
 |Version|Date|
 |:---|:---|
+| 0.1.6 | 7th August 2023|
+| 0.1.5 |5th August 2023|
 | 0.1.4 |24th July 2023|
 | 0.1.3 |13th July 2023|
 | 0.1.2 |10th July 2023|
