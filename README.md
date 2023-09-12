@@ -39,14 +39,24 @@ There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set i
 # Install & Run
 Fusion is available as a Debian package. There isn't a binary for Windows, but there will be a Docker image soon.
 
-- Right-click and "Save link as ..." (or equivalent)
+## Clone
+Clone the repo as normal and install with `dpkg` as below
+
+## Download
+- Click on the `.deb` file then click the download file icon on the **far right**:
+
+![image](https://github.com/FusionCache/releases/assets/129124415/c7fdba54-5a22-471d-bb85-7406ab2ad666)
+
+## Install
 - Install package: `sudo dpkg -i fusioncache_0.1.9_amd64.deb`
 - This installs to: `/usr/local/bin/fusioncache`
 
-By default, it starts in KV mode with settings:
-- IP: 127.0.0.1
-- Port: 1987
-- Max read buffer: 64 bytes
+## Run
+- Run the server:  `./fusionserver --config=default.json`
+- By default, it starts in KV mode with settings:
+   - IP: 127.0.0.1
+   - Port: 1987
+   - Max read buffer: 64 bytes
 
 
 See [install](https://fusioncache.github.io/docs/install/install) docs for more information.
