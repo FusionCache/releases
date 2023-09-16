@@ -148,7 +148,7 @@ Each of mode require specific settings. Defaults are:
 ## v0.1.10
 16 September 2023
 - Key Value
-  - Fix for in single thread CPU
+  - Fix for single thread CPU
 
 <br/>
 
