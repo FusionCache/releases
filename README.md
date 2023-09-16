@@ -7,7 +7,9 @@
 
 <br/>
 
-FusionCache provides a cache for storing and searching data, and a publish subscribe server for distributing data. Data is always handles as JSON.
+FusionCache provides a cache for storing and searching data, and a publish subscribe server for distributing data. Data is always handled as JSON via REST or WebSocket interfaces.
+
+The server is aimed towards multithreaded systems but it does run on single threaded systems such as cloud VMs.
 
 There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set in the configuration file, rather than supporting different modes during runtime. This is gives more control over CPU and memory resources.
 
