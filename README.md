@@ -45,12 +45,10 @@ Fusion is available as a Debian package. There isn't a binary for Windows, but t
 Clone the repo as normal and install with `dpkg` as below
 
 ## Download
-- Click on the `.deb` file then click the download file icon on the **far right**:
-
-![image](https://github.com/FusionCache/releases/assets/129124415/c7fdba54-5a22-471d-bb85-7406ab2ad666)
+Download the Debian package [here](https://fusion.gateway.scarf.sh/package/fusioncache_0.1.10_amd64.deb).
 
 ## Install
-- Install package: `sudo dpkg -i fusioncache_0.1.9_amd64.deb`
+- Install using dpkg, i.e. for v0.1.10: `sudo dpkg -i fusioncache_0.1.10_amd64.deb`
 - This installs to: `/usr/local/bin/fusioncache`
 
 ## Run
