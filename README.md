@@ -145,8 +145,15 @@ Each of mode require specific settings. Defaults are:
 
 <br/>
 
+## v0.1.10
+16 September 2023
+- Key Value
+  - Fix for in single thread CPU
+
+<br/>
+
 ## v0.1.9
-09 September 2023
+9 September 2023
 - Publish Subscribe 
   - Added lightweight pubsub server
   - Config file can have `pubsub` mode and section to support this
@@ -156,7 +163,7 @@ Each of mode require specific settings. Defaults are:
 <br/>
 
 ## v0.1.8
-14th August 2023
+14 August 2023
 - KV Mode: 
   - Small update for performance tweak, not using all cores
 
@@ -164,7 +171,7 @@ Each of mode require specific settings. Defaults are:
 <br/>
 
 ## v0.1.7
-8th August 2023
+8 August 2023
 - KV Mode: 
   - New query `SETQ` (Set Quiet) which is the same as `SET` but only sends a response on an error
   - New query `ADDQ` (Add Quiet) which is the same as `ADD` but only sends a response on an error
@@ -177,12 +184,12 @@ Each of mode require specific settings. Defaults are:
 
 |Version|Date|
 |:---|:---|
-| 0.1.6 | 7th August 2023|
-| 0.1.5 |5th August 2023|
-| 0.1.4 |24th July 2023|
-| 0.1.3 |13th July 2023|
-| 0.1.2 |10th July 2023|
-| 0.1.1 |5th July 2023|
+| 0.1.6 |7 August 2023|
+| 0.1.5 |5 August 2023|
+| 0.1.4 |24 July 2023|
+| 0.1.3 |13 July 2023|
+| 0.1.2 |10 July 2023|
+| 0.1.1 |5 July 2023|
 
 
 <br/>
