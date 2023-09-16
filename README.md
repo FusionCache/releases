@@ -41,12 +41,13 @@ There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set i
 # Install & Run
 Fusion is available as a Debian package. There isn't a binary for Windows, but there will be a Docker image soon.
 
-Install by either cloning this repo or [downloading](https://fusion.gateway.scarf.sh/package/fusioncache_0.1.10_amd64.deb) the file.
+Install by [downloading](https://fusion.gateway.scarf.sh/package/fusioncache_0.1.10_amd64.deb) the Debian package.
 
 
 ## Install
-- Install using dpkg, i.e. for v0.1.10: `sudo dpkg -i fusioncache_0.1.10_amd64.deb`
+- Install using dpkg, for example: `sudo dpkg -i fusioncache_0.1.10_amd64.deb`
 - This installs to: `/usr/local/bin/fusioncache`
+
 
 ## Run
 - Run the server:  `./fusionserver --config=default.json`
