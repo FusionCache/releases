@@ -11,7 +11,7 @@ FusionCache provides a cache for storing and searching data, and a publish subsc
 
 The server is aimed towards multithreaded systems but it does run on single threaded systems such as cloud VMs.
 
-There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set in the configuration file, rather than supporting different modes during runtime. This is gives more control over CPU and memory resources.
+There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set in the configuration file, rather than supporting different modes during runtime. This is gives more control over the CPU.
 
 <br/>
 
@@ -38,26 +38,39 @@ There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set i
 <br/>
 <br/>
 
-# Install & Run
-Fusion is available as a Debian package. There isn't a binary for Windows, but there will be a Docker image soon.
 
-Install by [downloading](https://fusion.gateway.scarf.sh/package/fusioncache_0.1.10_amd64.deb) the Debian package.
+# Supported Systems
+- Fusion is available as a Debian package for x86 64-bit
+- No 32-bit build
+- ARM support in the future
+- There will be a Docker image soon
+- There is not a binary for Windows
+  - It may work in WSL2 but this hasn't been tested
 
+<br/>
 
-## Install
+# Download
+- [Download](https://fusion.gateway.scarf.sh/package/fusioncache_0.1.10_amd64.deb) the Debian package.
+
+<br/>
+
+# Install
 - Install using dpkg, for example: `sudo dpkg -i fusioncache_0.1.10_amd64.deb`
 - This installs to: `/usr/local/bin/fusioncache`
 
+<br/>
 
-## Run
+# Run
 - Run the server:  `./fusionserver --config=default.json`
 - By default, it starts in KV mode with settings:
    - IP: 127.0.0.1
    - Port: 1987
    - Max read buffer: 1500 bytes
 
+<br/>
 
-See [install](https://fusioncache.github.io/docs/install/install) docs.
+See the KV [API docs](https://fusioncache.github.io/docs/kvapi/) or how to [configure](https://fusioncache.github.io/docs/install/run/#config-file) the server.
+
 
 <br/>
 <br/>
@@ -68,7 +81,7 @@ These can be changed in the `default.json` config file.
 
 `mode` can be either:  `kv`, `pubsub` or `objects`.
 
-Each of mode require specific settings. Defaults are:
+Each mode requires specific settings. Defaults are:
 
 **kv**
 
@@ -81,7 +94,7 @@ Each of mode require specific settings. Defaults are:
     {
       "ip":"127.0.0.1",
       "port":1987,
-      "maxRead":64
+      "maxRead":1500
     }
   }
 }
