@@ -62,7 +62,7 @@ There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set i
 
 # Run
 - Run the server:  `./fusionserver --config=default.json`
-- By default, it starts in KV mode with settings:
+- By default, it starts in KV mode with settings for the _WebSocket_ interface:
    - IP: 127.0.0.1
    - Port: 1987
    - Max read buffer: 1500 bytes
