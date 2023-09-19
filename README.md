@@ -50,12 +50,12 @@ There are three modes: KeyValue, PublishSubscribe and Objects. The mode is set i
 <br/>
 
 # Download
-- [Download](https://fusion.gateway.scarf.sh/package/fusioncache_0.1.10_amd64.deb) the Debian package.
+- [Download](https://fusion.gateway.scarf.sh/package/fusioncache_0.1.11_amd64.deb) the Debian package.
 
 <br/>
 
 # Install
-- Install using dpkg, for example: `sudo dpkg -i fusioncache_0.1.10_amd64.deb`
+- Install using dpkg, for example: `sudo dpkg -i fusioncache_0.1.11_amd64.deb`
 - This installs to: `/usr/local/bin/fusioncache`
 
 <br/>
@@ -155,6 +155,12 @@ Each mode requires specific settings. Defaults are:
 # Recent Updates
 
 <br/>
+
+## v0.1.11
+19 September 2023
+- Key Value
+  - Change for i/o threads
+
 
 ## v0.1.10
 16 September 2023
